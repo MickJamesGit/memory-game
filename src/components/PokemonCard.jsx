@@ -1,3 +1,5 @@
+import '../styles/cards.css';
+
 const PokemonCard = ({ pokemon }) => {
   return (
     <div className="card">

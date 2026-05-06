@@ -6,7 +6,7 @@ import { usePokemon } from "./hooks/usePokemon";
 function App() {
 const { pokemonList, loading } = usePokemon();
 
-  if (loading) return <p>Loading cards...</p>;
+  if (loading) return <p>Loading pokemon...</p>;
 
   return <PokemonGrid pokemonList={pokemonList} />;
 }

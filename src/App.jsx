@@ -5,7 +5,7 @@ import PokemonGrid from './components/PokemonGrid';
 import { usePokemon } from './hooks/usePokemon';
 
 function App() {
-  const { pokemonList, loading } = usePokemon();
+  const { pokemonList, loading, setPokemonList} = usePokemon();
   const [bestScore, setBestScore] = useState(0);
   const [currentScore, setCurrentScore] = useState(0);
   const [clickedPokemonIds, setClickedPokemonIds] = useState([]);
@@ -22,6 +22,11 @@ function App() {
     setCurrentScore(nextScore);
     setBestScore((prevBest) => Math.max(prevBest, nextScore));
     setClickedPokemonIds((prev) => [...prev, pokemonId]);
+    setPokemonList((prev) => shuffle(prev));
+  };
+
+  const shuffle = (array) => {
+  return [...array].sort(() => Math.random() - 0.5);
   };
 
   if (loading) return <p>Loading pokemon...</p>;

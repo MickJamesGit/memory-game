@@ -33,5 +33,5 @@ export const usePokemon = () => {
     fetchPokemon();
   }, []);
 
-  return { pokemonList, loading };
+  return { pokemonList, loading, setPokemonList };
 };

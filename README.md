@@ -22,4 +22,4 @@ A memory card game where you need to pick unique pokemon each turn. But theres a
 
 ## Screenshots
 
-![Gameplay](.src/screenshots/gameplay.png)
+![Gameplay](/src/screenshots/gameplay.png)

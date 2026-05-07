@@ -15,11 +15,11 @@ A memory card game where you need to pick unique pokemon each turn. But theres a
 
 **How to run**
 
-'npm install'
-'npm run dev' for dev | 'npm run build' for prod
+`npm install`
+`npm run dev` for dev | `npm run build` for prod
 
 ---
 
 ## Screenshots
 
-![Gameplay](./screenshots/gameplay.png)
+![Gameplay](.src/screenshots/gameplay.png)
